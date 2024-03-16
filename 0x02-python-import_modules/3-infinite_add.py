@@ -15,3 +15,6 @@ if __name__ == "__main__":
         args = [int(arg) for arg in sys.argv[1:]]
         result = add(*args)
         print(result)
+
+    else:
+        print("0")
