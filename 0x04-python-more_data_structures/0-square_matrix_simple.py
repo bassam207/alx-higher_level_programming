@@ -1,11 +1,18 @@
 #!/usr/bin/python3
 def square_matrix_simple(matrix=[]):
-    squared_list = []
+    """
+    Computes the square value of all integers of a matrix
+    ...
 
-    for row in matrix:
-        squared_row = []
+    Parameters
+    ----------
+    matrix : list (of lists)
+        The list of elements
 
-        for num in row:
-            squared_row.append(num ** 2)
-        squared_list.append(squared_row)
-    return (squared_list)
+    Return:
+        a new matrix:
+         Same size as matrix
+         Each value should be the square of the value of the input
+    """
+
+    return ([list(map(lambda x: x * x, row)) for row in matrix])
