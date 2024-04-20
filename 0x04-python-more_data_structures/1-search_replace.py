@@ -7,5 +7,4 @@ def search_replace(my_list, search, replace):
             newl.append(replace)
         else:
             newl.append(item)
-    
     return (newl)
