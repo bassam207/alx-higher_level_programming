@@ -5,7 +5,7 @@
 class Rectangle:
     """Represent a rectangle."""
 
-    def __init__(self, width = 0, height = 0):
+    def __init__(self, width=0, height=0):
         """Initialize a new Rectangle.
 
         Args:
@@ -18,7 +18,7 @@ class Rectangle:
     @property
     def width(self):
         """Get/set the width of the Rectangle."""
-        return (self.__width)
+        return self.__width
 
     @width.setter
     def width(self, value):
@@ -31,7 +31,7 @@ class Rectangle:
     @property
     def height(self):
         """Get/set the height of the Rectangle."""
-        return (self.__height)
+        return self.__height
 
     @height.setter
     def height(self, value):
@@ -47,6 +47,6 @@ class Rectangle:
 
     def perimeter(self):
         """Return the perimeter of the Rectangle."""
-        if width == 0 or height == 0:
+        if self.__width == 0 or self.__height == 0:
             return (0)
-        return ((width * 2) + (height * 2))
+        return ((self.__width * 2) + (self.__height * 2))
